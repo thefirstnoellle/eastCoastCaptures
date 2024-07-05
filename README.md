@@ -1,6 +1,6 @@
 # East Coast Captures
 
-### Overview
+## Overview
 East Coast Captures
 
 ## Features
