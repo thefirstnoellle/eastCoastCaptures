@@ -1,23 +1,21 @@
-import { useState } from 'react'
-import { Section } from './Section'
+import React from 'react';
+import './index.css';
+import Header from './Header';
+import Hero from './Hero';
+import Section from './Section';
+import Footer from './Footer';
+import FeaturedImage from './FeaturedImage';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>East Coast Captures</h1>
-      <div>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-       
-      </div>
-      <Section>Content</Section>
-      <Section>About</Section>
-      
-    </>
-  )
+    <div className="App">
+      <Header />
+      <Hero />
+      <Section />
+      <FeaturedImage />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
