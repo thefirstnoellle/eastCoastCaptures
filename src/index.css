@@ -57,14 +57,27 @@ nav img:hover {
 }
 
 
-.hero img {
+hero img {
   width: 100%;
   height: auto;
+  position: relative;
 }
 
-.text-section {
-  text-align: center;
+.hero-text {
+  color: #fefae0;
+  position: absolute;
+  bottom: 80px;
+  left: 50px;
   padding: 20px;
+  max-width: 200px;
+  font-size: 7vw;
+  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.321);
+}
+
+Section div{
+  text-align: center;
+  padding: 500px;
+  margin-top: 100px;
 }
 
 .image-section {
@@ -83,7 +96,7 @@ footer {
   color: #fefae0;
   text-align: center;
   padding: 10px 0;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }

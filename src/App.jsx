@@ -11,8 +11,9 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <Section />
+      <Section>newfoundland lifestyle photographer</Section>
       <FeaturedImage />
+      <Section>About</Section>
       <Footer />
     </div>
   );
