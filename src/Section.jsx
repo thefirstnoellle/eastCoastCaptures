@@ -1,10 +1,11 @@
 import React from 'react';
 
-function Section({children}) {
+function Section() {
   return (
-    <div>
-      {children}
-    </div>
+    <div className='textSection'>
+      <p className='textSection-photographer'>newfoundland based</p>
+      <p className='textSection-NL'>photographer.</p>
+      </div>
   );
 }
 

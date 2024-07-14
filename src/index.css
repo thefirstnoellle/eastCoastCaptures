@@ -13,24 +13,21 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  font-family: "Libre-baskerville", serif;
+  font-weight: 400;
 }
 
-.App {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
 nav {
   background-color: #283618;
   color: #fefae0;
   display: flex;
-  padding: 15px;
+  padding: 10px;
   font-family: "Libre-baskerville", serif;
   font-weight: 400;
   font-size: 1.25vw;
-
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
 }
 
 nav ul {
@@ -60,21 +57,25 @@ nav img:hover {
   cursor: pointer;
 }
 
+hero {
+  position: relative;
+}
 
 hero img {
   width: 100%;
-  height: auto;
-  position: relative;
+  height: 600px;
+  object-fit:cover;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
 }
 
 .hero-text {
   color: #fefae0;
   position: absolute;
-  bottom: 80px;
-  left: 50px;
+  bottom: 5%;
+  left: 5%;
   padding: 20px;
   max-width: 200px;
-  font-size: 8vw;
+  font-size: 6vw;
   text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.321);
   font-family: "Libre-baskerville", serif;
   font-weight: 400;
@@ -82,21 +83,47 @@ hero img {
 
 }
 
-Section div{
-  text-align: center;
-  padding: 500px;
-  margin-top: 100px;
+@media (max-width: 768px) {
+  .hero-text {
+    max-width: 100px;
+  }
 }
 
-.image-section {
+.textSection {
+  background-color: #FFFAE0;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
 }
 
-.images {
+.textSection-photographer {
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-size: 2vw;
+  color: #CC794E;
+  line-height: 10%;
+  margin-top: 50px;
+}
+
+.textSection-NL {
+  font-weight: 400;
+  font-size: 4vw;
+  margin-bottom: 50px;
+}
+
+.gallery {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
+  margin: 70px;
+}
+
+.gallery img {
+  border-radius: 10%;
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
 }
 
 footer {
@@ -104,7 +131,5 @@ footer {
   color: #fefae0;
   text-align: center;
   padding: 10px 0;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
