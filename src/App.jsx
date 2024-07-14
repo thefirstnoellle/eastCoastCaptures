@@ -3,8 +3,9 @@ import './index.css';
 import Header from './Header';
 import Hero from './Hero';
 import Section from './Section';
-import Footer from './Footer';
 import FeaturedImage from './FeaturedImage';
+import About from './About';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Hero />
       <Section/>
       <FeaturedImage/>
-      <Section/>
+      <About/>
       <Footer />
     </div>
   );
