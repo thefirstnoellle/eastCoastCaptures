@@ -3,6 +3,7 @@ import Featured1 from './assets/hero-image.jpg'
 
 function FeaturedImage() {
   return (
+    <div className='galleryContainer'>
     <div className="gallery">
       <img src={Featured1}/>
       <img src={Featured1}/>
@@ -11,6 +12,7 @@ function FeaturedImage() {
       <img src={Featured1}/>
       <img src={Featured1}/>
 
+      </div>
       </div>
   );
 }

@@ -5,6 +5,7 @@ import Hero from './Hero';
 import Section from './Section';
 import FeaturedImage from './FeaturedImage';
 import About from './About';
+import Inquiry from './Inquiry';
 import Footer from './Footer';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Section/>
       <FeaturedImage/>
       <About/>
+      <Inquiry/>
       <Footer />
     </div>
   );
