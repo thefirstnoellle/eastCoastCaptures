@@ -2,16 +2,16 @@ import React from 'react';
 
 function Inquiry() {
   return (
-    <div>
+    <div className='contactForm'>
     <p>Contact Me</p>
     <form>
-    <label>Your name
+    <label>Your name:
     <input type="text" />
     </label>
-    <label>Email
+    <label>Email:
     <input type="text" />
     </label>
-    <label>What type of session are you looking to book
+    <label>What type of session are you looking to book:
     <select>
     <option>Couples</option>
     <option>Maternity</option>
@@ -19,9 +19,10 @@ function Inquiry() {
     <option>Family</option>
     </select>
     </label>
-    <label>Tell me more about what you're looking for
+    <label>Tell me a little more about what you're looking for:
     <textarea></textarea>
     </label>
+    <button>Submit</button>
   </form>
   </div>
   );
