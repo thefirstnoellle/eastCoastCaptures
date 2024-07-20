@@ -1,23 +1,15 @@
 import React from 'react';
-import './index.css';
-import Header from './Header';
-import Hero from './Hero';
-import Section from './Section';
-import FeaturedImage from './FeaturedImage';
-import About from './About';
-import Inquiry from './Inquiry';
-import Footer from './Footer';
+import { RouterProvider } from "react-router-dom";
+import "./index.css";
+import { router } from "./Routes";
+import { PhotoProvider } from "./PhotoContext";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <Section/>
-      <FeaturedImage/>
-      <About/>
-      <Inquiry/>
-      <Footer />
+    <PhotoProvider>
+      <RouterProvider router={router} />
+    </PhotoProvider>
     </div>
   );
 }
