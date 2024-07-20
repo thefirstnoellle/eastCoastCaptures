@@ -17,6 +17,8 @@ function Inquiry() {
     <option>Maternity</option>
     <option>Engagement</option>
     <option>Family</option>
+    <option>Newborn</option>
+    <option>Elopement</option>
     </select>
     </label>
     <label>Tell me a little more about what you're looking for:
