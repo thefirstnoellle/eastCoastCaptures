@@ -1,18 +1,18 @@
-import React, { useState, useContext } from "react";
-import { PhotoContext } from "./PhotoContext"; // I have no idea what this means or does
+// Manage.js
+import { useState, useContext } from "react";
+import { PhotoContext } from "./PhotoContext";
 
-function Manage() {
+export const Manage = () => {
   const { photos, setPhotos } = useContext(PhotoContext);
   const [imageURL, setImageURL] = useState('');
   const [name, setName] = useState('');
 
-  // form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     if (imageURL && name) {
       const newPhoto = { imageURL, name };
       setPhotos([...photos, newPhoto]);
-      setImageURL(''); 
+      setImageURL('');
       setName('');
     }
   };
@@ -22,41 +22,29 @@ function Manage() {
       <h1>Manage Photos</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Image URL:</label>
+          <label>
+            Image URL:
             <input 
+              type="text" 
               value={imageURL} 
               onChange={(e) => setImageURL(e.target.value)} 
-              type="text"
               required 
             />
+          </label>
         </div>
         <div>
-          <label>Name:</label>
+          <label>
+            Name:
             <input 
+              type="text" 
               value={name} 
               onChange={(e) => setName(e.target.value)} 
-              type="text" 
               required 
             />
+          </label>
         </div>
         <button type="submit">Add Photo</button>
       </form>
-      
-      <div>
-        <h2>Gallery</h2> 
-        {/* separate into gallery component */}
-        <ul>
-          {photos.map((photo, index) => (
-            <li key={index}>
-              <p>Name: {photo.name}</p>
-              <img src={photo.imageURL} alt={photo.name} style={{ maxWidth: '100px' }} />
-            </li>
-          ))}
-        </ul>
-      </div>
     </div>
   );
 };
-
-
-export default Manage

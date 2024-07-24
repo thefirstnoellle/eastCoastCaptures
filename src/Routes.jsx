@@ -10,6 +10,7 @@ import Footer from "./Footer";
 
 import Featured1 from "./assets/hero-image.jpg";
 import { Manage } from "./Manage";
+import { Galleries } from "./Galleries"; //why are these in {} and above pages aren't
 
 const Jack = "https://i.imgur.com/0AZ7kEl.png";
 
@@ -57,10 +58,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "galleries",
-        element: 
-        <>
-        <div>galleries</div>
-        </>,
+        element: <Galleries/>,
       },
       {
         path: "contact",
