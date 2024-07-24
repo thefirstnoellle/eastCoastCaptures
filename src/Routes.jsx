@@ -10,9 +10,6 @@ import Footer from "./Footer";
 
 import Featured1 from "./assets/hero-image.jpg";
 import { Manage } from "./Manage";
-import { useContext } from "react";
-import { PhotoContext } from "./PhotoContext";
-import { Galleries } from "./Galleries";
 
 const Jack = "https://i.imgur.com/0AZ7kEl.png";
 
@@ -43,13 +40,10 @@ export const router = createBrowserRouter([
                 Featured1,
                 Featured1,
                 Featured1,
-                Featured1,
-                Featured1,
-                Featured1,
               ]}
             />
             <About />
-            <Inquiry />
+            <Inquiry/>
           </>
         ),
       },
@@ -63,18 +57,21 @@ export const router = createBrowserRouter([
       },
       {
         path: "galleries",
-        element: <Galleries />,
+        element: 
+        <>
+        <div>galleries</div>
+        </>,
       },
       {
         path: "contact",
         element: (
           <>
-            <div>contact</div>
+            <Inquiry/>
           </>
         ),
       },
       {
-        path: "/manage",
+        path: "manage",
         element: <Manage />,
       },
     ],

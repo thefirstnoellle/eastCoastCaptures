@@ -32,25 +32,28 @@ body {
 
 .nav ul {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  list-style-type: none;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+  list-style-type: none;
 } 
 
 .nav li:hover {
   cursor: pointer;
 }
 
-.nav ul li a {
+.link {
   color: #fefae0;
   text-decoration: none;
 }
 
+a.link {
+  width: 10%;
+}
+
 .nav img {
-  width: 9%;
-  height: auto;
+  width: 100%;
 }
 
 .nav img:hover {

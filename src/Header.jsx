@@ -7,19 +7,17 @@ function Header() {
     <div className='nav'>
       <ul>
       <li>
-        <Link to="/">about</Link>
+        <Link className="link" to="/">about.</Link>
         </li>
         <li>
-        <Link to="/services">services.</Link>
+        <Link className="link" to="/services">services.</Link>
         </li>
-        <Link to="/">
-        <img src={logo} alt="Logo" />
-        </Link>
+        <Link className="link" to="/"> <img src={logo} alt="Logo" /></Link>
         <li>
-        <Link to="/galleries">galleries.</Link>
+        <Link className="link" to="/galleries">galleries.</Link>
         </li>
         <li>
-        <Link to="/contact">contact.</Link>
+        <Link className="link" to="/contact">contact.</Link>
         </li>
       </ul>
     </div>
