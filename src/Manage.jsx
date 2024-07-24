@@ -18,10 +18,10 @@ function Manage() {
   };
 
   return (
-    <div>
-      <h1>Manage Photos</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <div className="manageImages">
+      <h1>Manage Images</h1>
+      <form onSubmit={handleSubmit} className="manageForm">
+        <div className="inputImageURL">
           <label>
             Image URL:
             <input 
@@ -32,9 +32,9 @@ function Manage() {
             />
           </label>
         </div>
-        <div>
+        <div className="inputImageName">
           <label>
-            Name:
+            Image Name:
             <input 
               type="text" 
               value={name} 
@@ -43,7 +43,7 @@ function Manage() {
             />
           </label>
         </div>
-        <button type="submit">Add Photo</button>
+        <button type="submit" className="submitImage">Add Image</button>
       </form>
     </div>
   );

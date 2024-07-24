@@ -243,3 +243,34 @@ footer {
   background-color: #CC794E;
   color: #FFFAE0;
 }
+
+.manageImages {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manageForm {
+  margin: 20px;
+}
+
+.inputImageName, inputImageURL {
+  margin-top: 10px;
+}
+
+.manageForm input {
+  margin-left: 5px;
+  width: 200px;
+}
+
+.submitImage {
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.submitImage:hover {
+  cursor: pointer;
+}
