@@ -2,7 +2,7 @@
 import { useState, useContext } from "react";
 import { PhotoContext } from "./PhotoContext";
 
-export const Manage = () => {
+function Manage() {
   const { photos, setPhotos } = useContext(PhotoContext);
   const [imageURL, setImageURL] = useState('');
   const [name, setName] = useState('');
@@ -48,3 +48,5 @@ export const Manage = () => {
     </div>
   );
 };
+
+export default Manage

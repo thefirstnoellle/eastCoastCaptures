@@ -9,8 +9,8 @@ import Inquiry from "./Inquiry";
 import Footer from "./Footer";
 
 import Featured1 from "./assets/hero-image.jpg";
-import { Manage } from "./Manage";
-import { Galleries } from "./Galleries"; //why are these in {} and above pages aren't
+import Manage from "./Manage";
+import Galleries from "./Galleries"; 
 
 const Jack = "https://i.imgur.com/0AZ7kEl.png";
 

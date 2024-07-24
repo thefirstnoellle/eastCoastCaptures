@@ -4,8 +4,8 @@ function FeaturedImage({ images = [] }) {
 
 return (
 
-<div className="galleryContainer">
-  <div className="gallery">
+<div className="featuredContainer">
+  <div className="featured">
     {images.map((image, index) => (
     <img key={index} src={image} />
     ))}

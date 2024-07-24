@@ -1,20 +1,29 @@
+// Galleries.jsx
 import { useContext } from "react";
 import { PhotoContext } from "./PhotoContext";
 
-export const Galleries = () => {
-  const { photos } = useContext(PhotoContext);
+function Galleries() {
+  const { photos, setPhotos } = useContext(PhotoContext);
+
+  const handleDelete = (indexToDelete) => {
+    setPhotos(photos.filter((_, index) => index !== indexToDelete));
+  };
 
   return (
-    <div>
-      <h2>Gallery</h2>
-      <ul>
+    <div className="galleryContainer">
+      <ul className="gallery">
+        {photos.length === 0 && "No Photos Uploaded"}
         {photos.map((photo, index) => (
           <li key={index}>
-            <p>Name: {photo.name}</p>
-            <img src={photo.imageURL} alt={photo.name} style={{ maxWidth: '100px' }} />
+            <img src={photo.imageURL} alt={photo.name} style={{ maxWidth: '500px' }} />
+            <button className="delete-btn" onClick={() => handleDelete(index)}>
+                Delete
+            </button>
           </li>
         ))}
       </ul>
     </div>
   );
 };
+
+export default Galleries;
